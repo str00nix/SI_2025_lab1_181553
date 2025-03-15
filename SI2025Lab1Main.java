@@ -97,9 +97,13 @@ class TaskManager {
     }
 
     // 7. Count tasks per category
-    public Map<String, Integer> countTasksPerCategory() {
-        // TODO: Implement counting logic
-        return new HashMap<>();
+    public TreeMap<String, Long> countTasksPerCategory() {
+        return tasks.stream().collect(Collectors.groupingBy(
+                    Task::getCategory,
+                    TreeMap::new,
+                    Collectors.counting()
+                )
+        );
     }
 
     // 8. Mark a task as completed by name
@@ -121,7 +125,8 @@ public class SI2025Lab1Main {
         manager.addTask("Buy groceries", Priority.LOW, "Personal");
 
         // MISSING: Calls to the new methods that will be implemented
-		manager.sortTasksByName();
+    manager.sortTasksByName();
+		System.out.println(manager.countTasksPerCategory().toString());
 
         manager.printTasks();
     }
