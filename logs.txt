@@ -1,0 +1,19 @@
+*   c8e368b (HEAD -> master, origin/master) Merge branch '10-mark-all-tasks-in-a-category-as-completed'
+|\
+| * a740787 (origin/10-mark-all-tasks-in-a-category-as-completed, 10-mark-all-tasks-in-a-category-as-completed) Implemented Mark all tasks in a category as completed
+* |   7cb72b7 Merge pull request #12 from str00nix/7-count-tasks-per-category
+|\ \
+| * \   71a0940 Merge branch 'master' into 7-count-tasks-per-category
+| |\ \
+| |/ /
+|/| |
+* | |   a042b47 Merge pull request #11 from str00nix/3-list-tasks-sorted-by-name
+|\ \ \
+| |_|/
+|/| |
+| * | c669f52 (origin/3-list-tasks-sorted-by-name, 3-list-tasks-sorted-by-name) Implemented List tasks sorted by name
+|/ /
+| * ec3a524 (origin/7-count-tasks-per-category, 7-count-tasks-per-category) Implemented Count tasks per category
+|/
+* a3ba4f6 Add starter code
+* 17ffe8a Initial commit
